@@ -84,7 +84,7 @@
 
         function createEarthMaterial() {
             //4096 is the max width for maps
-            var earthTexture = THREE.ImageUtils.loadTexture("./Texturen/CreatureSkin_Diffuse.png");
+            var earthTexture = THREE.ImageUtils.loadTexture("https://pixabay.com/get/78953c04026d03b0c1c2/1442212848/wall-893608_640.jpg");
 
             var earthMaterial = new THREE.MeshBasicMaterial();
             earthMaterial.map = earthTexture;
@@ -93,7 +93,7 @@
         }
 
         function createCloudMaterial() {
-            var cloudTexture = THREE.ImageUtils.loadTexture("https://pixabay.com/get/78953c04026d03b0c1c2/1442212848/wall-893608_640.jpg");//loads image asynchronously
+            var cloudTexture = THREE.ImageUtils.loadTexture("https://pixabay.com/get/215b966fdc5ff30495f2/1442212755/ground-beef-895004_640.png");//loads image asynchronously
             
 
             var cloudMaterial = new THREE.MeshBasicMaterial();//MeshBasicMaterial is self-illuminating - does not require lighting
