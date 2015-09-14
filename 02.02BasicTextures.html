@@ -84,7 +84,7 @@
 
         function createEarthMaterial() {
             //4096 is the max width for maps
-            var earthTexture = THREE.ImageUtils.loadTexture("earthmap4k.jpg");
+            var earthTexture = THREE.ImageUtils.loadTexture("CreatureSkin_Diffuse.png");
 
             var earthMaterial = new THREE.MeshBasicMaterial();
             earthMaterial.map = earthTexture;
@@ -93,7 +93,8 @@
         }
 
         function createCloudMaterial() {
-            var cloudTexture = THREE.ImageUtils.loadTexture("fair_clouds_4k.png");//loads image asynchronously
+            var cloudTexture = THREE.ImageUtils.loadTexture("EyelashesBrows_Male2.png");//loads image asynchronously
+            
 
             var cloudMaterial = new THREE.MeshBasicMaterial();//MeshBasicMaterial is self-illuminating - does not require lighting
             cloudMaterial.map = cloudTexture;
