@@ -3,9 +3,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>02.02 - Basic Textures</title>
-	<script src="three.js"></script>
-    <script src="dat.gui.min.js"></script><!--https//code.google.com/p/dat-gui/-->
-    <script src="OrbitControls.js"></script>
+	<script src="./ThreeJS/three.js"></script>
+    <script src="./ThreeJS/dat.gui.min.js"></script><!--https//code.google.com/p/dat-gui/-->
+    <script src="./ThreeJS/OrbitControls.js"></script>
     <style>
         body {
             /*set margin to 0 and overflow to hidden, to go fullscreen*/
@@ -84,7 +84,7 @@
 
         function createEarthMaterial() {
             //4096 is the max width for maps
-            var earthTexture = THREE.ImageUtils.loadTexture("CreatureSkin_Diffuse.png");
+            var earthTexture = THREE.ImageUtils.loadTexture("./Texturen/CreatureSkin_Diffuse.png");
 
             var earthMaterial = new THREE.MeshBasicMaterial();
             earthMaterial.map = earthTexture;
@@ -93,7 +93,7 @@
         }
 
         function createCloudMaterial() {
-            var cloudTexture = THREE.ImageUtils.loadTexture("EyelashesBrows_Male2.png");//loads image asynchronously
+            var cloudTexture = THREE.ImageUtils.loadTexture("./Texturen/EyelashesBrows_Male2.png");//loads image asynchronously
             
 
             var cloudMaterial = new THREE.MeshBasicMaterial();//MeshBasicMaterial is self-illuminating - does not require lighting
